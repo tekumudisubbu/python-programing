@@ -1,0 +1,22 @@
+empo = input()
+empname = input()
+desig = input()
+basicsal = int(input())
+da = int(input())
+ta = int(input())
+hra = int(input())
+netsal = basicsal + da + ta + hra
+if netsal>100000:
+    tax = netsal*10/100
+if netsal>50000:
+    tax = netsal*7/100
+if netsal>40000:
+    tax = netsal*4/100
+if netsal>20000:
+    tax = netsal*2/100
+if netsal<20000:
+    tax = 0;
+print(empo)
+print(empname)
+print(desig)
+print(tax)
